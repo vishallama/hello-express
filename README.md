@@ -70,6 +70,11 @@ Here, `statics` is an array of tables. And, the first element of that array is
 an (unnamed) table contaning two key/value pairs. Upon deploying, the `/public`
 folder is pulled out of the packaged app, and requests to `https://hello-express.fly.dev/static` are then served from caches on Fly's edge servers.
 
+Now, when we enter `hello-express.fly.dev/images/kitten.jpg` in the search field
+of a web browser, we will see an image of a lovely kitten that's served from a
+cache on Fly edge servers. Our app doesn't need to handle such requests on its
+own.
+
 ## Deploying the App
 
 Run `fly deploy` to finish deploying your app.
