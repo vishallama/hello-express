@@ -69,3 +69,7 @@ url_prefix = "/static"
 Here, `statics` is an array of tables. And, the first element of that array is
 an (unnamed) table contaning two key/value pairs. Upon deploying, the `/public`
 folder is pulled out of the packaged app, and requests to `https://hello-express.fly.dev/static` are then served from caches on Fly's edge servers.
+
+## Deploying the App
+
+Run `fly deploy` to finish deploying your app.
