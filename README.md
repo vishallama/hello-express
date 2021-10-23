@@ -25,7 +25,7 @@ as expected.
 If everything looks okay, you may kill the running app (`Ctrl+C` on Linux) to
 proceed with instructions on launching and deploying on the Fly platform, below.
 
-## Instructions on Launching the App
+## Launching the App
 
 Follow the [Login to Fly Quickstart Guide](https://fly.io/docs/getting-started/login-to-fly/) to set up your Fly account, and after you've done so, come back
 here.
