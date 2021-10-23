@@ -2,8 +2,8 @@
 
 ## A Fly.io Example
 
-This is a very simple example that shows how to `launch` and `deploy` a Node
-application on the Fly.io platform. It demonstrates the _static asset caching_
+This is a very simple example that shows how to _launch_ and _deploy_ a Node
+application on the Fly.io platform. It demonstrates the **static asset caching**
 feature offered by the platform. Developers enable this feature by adding a
 `[statics]` section in the associated Fly configuration file (`fly.toml`) for
 their application. We initially generate this configuration file using the
