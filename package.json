@@ -1,0 +1,32 @@
+{
+  "name": "hello-express",
+  "version": "0.1.0",
+  "description": "Simple Express app serving dynamic and static content.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "app",
+    "static",
+    "asset",
+    "caching",
+    "node"
+  ],
+  "author": "Vishal Lama",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishallama/hello-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vishallama/hello-express/issues"
+  },
+  "homepage": "https://github.com/vishallama/hello-express#readme"
+}
