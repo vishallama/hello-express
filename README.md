@@ -38,3 +38,34 @@ will eventually be deployed. When asked `Would you like to deploy now?`, answer
 `No`. Once this process is finished, you should have a `fly.toml` file in the
 root of the app folder. This is the configuration file used by the Fly platform
 when we later deploy your app.
+
+## Enable Static Asset Caching
+
+Here's a snippet of the code contained in the app's `fly.toml` file that was
+generated:
+
+```toml
+app = "hello-express"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  PORT = "8080"
+```
+
+Let's add a `statics` section in the above file.
+
+```toml
+[[statics]]
+guest_path = "/public"
+url_prefix = "/static"
+```
+
+Here, `statics` is an array of tables. And, the first element of that array is
+an (unnamed) table contaning two key/value pairs. Upon deploying, the `/public`
+folder is pulled out of the packaged app, and requests to `https://hello-express.fly.dev/static` are then served from caches on Fly's edge servers.
